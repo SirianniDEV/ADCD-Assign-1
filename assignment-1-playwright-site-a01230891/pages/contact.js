@@ -39,12 +39,12 @@ export default function Contact(){
             </main>
             <nav>
 
-                <img src='/icons/icons/menu-icon.png'/>
+                <img src='/icons/menu-icon.png'/>
                 <img src='/favicon.png'/>
 
                 <a href='about'>
                     <span>
-                        <img src="/icons/icons/upwardArrow.png"/>
+                        <img src="/icons/upwardArrow.png"/>
                     </span>
                 </a>
        

@@ -29,12 +29,12 @@ export default function Home() {
 
       <nav>
         
-        <img src='/icons/icons/menu-icon.png'/>
+        <img src='/icons/menu-icon.png'/>
         <img src='/favicon.png'/>
 
         <a href='about'>
           <span>
-            <img src="/icons/icons/downwardArrow.png"/>
+            <img src="/icons/downwardArrow.png"/>
           </span>
         </a>
        

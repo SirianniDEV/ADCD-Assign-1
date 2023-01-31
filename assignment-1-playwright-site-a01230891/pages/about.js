@@ -50,18 +50,18 @@ export default function About(){
 
         <nav>
         
-            <img src='/icons/icons/menu-icon.png'/>
+            <img src='/icons/menu-icon.png'/>
             <img src='/favicon.png'/>
 
             <a href='home'>
                 <span>
-                    <img src="/icons/icons/upwardArrow.png"/>
+                    <img src="/icons/upwardArrow.png"/>
                 </span>
             </a>
 
             <a href='contact'>
                 <span>
-                    <img src="/icons/icons/downwardArrow.png"/>
+                    <img src="/icons/downwardArrow.png"/>
                 </span>
             </a>
        
