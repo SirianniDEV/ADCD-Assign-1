@@ -1,4 +1,4 @@
-@import "variable.css";
+/* @import "variable.css"; */
 
 
 .container {
@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../public/background-images/background-images/backgroundMountain.jpg");
+  background-image: url("../public/background-images/backgroundMountain.jpg");
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center; 
@@ -138,5 +138,5 @@
 
 .intro {
   width: 500px;
-  color: '--primary-color' ;
+  color: var(--primary-color);
 }
