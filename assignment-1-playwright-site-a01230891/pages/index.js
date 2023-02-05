@@ -4,7 +4,8 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.main}>
+    <main className={styles.test}>
+
 
       <header>
         <title>Home</title>
@@ -13,33 +14,37 @@ export default function Home() {
         <meta property='og:description' content='BCIT Digital Design and Development Diploma'/>
         <link rel="icon" href='/favicon.png' />
       </header>
+        
 
-      <main>
+        <nav className={styles.topNav}>
+          <img src='/icons/menu-icon.png' width={'55px'}/>
+          <img src='/favicon.png' width={'75px'}/>
+        </nav>
 
-        <div className={styles.intro}>
+        <div className={styles.container}>
+        <div className={styles.homeContainer}>
           <header>
             <h1>An investment in knowledge pays the best interest.</h1>
           </header>
-            <hr></hr>
+            <hr className={styles.divider}></hr>
             <p>Different than a college or university, the British Columbia Institute of Technology offers practical, flexible, applied education with instructors who have direct, hands-on experience in their field.</p>
-            <a href="about"><button>More About Us</button></a>
-            <a href="contac"><button>Contact Us</button></a>
+            <a  href="about"><button className={styles.button} >More About Us</button></a>
+            <a  href="contact"><button className={styles.button}>Contact Us</button></a>
         </div>
-      </main>
 
-      <nav>
-        
-        <img src='/icons/menu-icon.png'/>
-        <img src='/favicon.png'/>
+      
+      </div>
 
+      <nav className={styles.bottomNav}>
         <a href='about'>
           <span>
-            <img src="/icons/downwardArrow.png"/>
+            <img src="/icons/downwardArrow.png" width={'55px'}/>
           </span>
         </a>
-       
       </nav>
 
-    </div>
+
+
+    </main>
   )
 }
