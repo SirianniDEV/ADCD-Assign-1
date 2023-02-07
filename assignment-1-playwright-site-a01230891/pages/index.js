@@ -1,10 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import {useState} from 'react'
+import MenuPopup from './comps/menu';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  
+  const [menu, setMenu] = useState(false);
+
   return (
-    <main className={styles.test}>
+
+    <main className={styles.home}>
 
 
       <header>
@@ -16,10 +20,16 @@ export default function Home() {
       </header>
         
 
-        <nav className={styles.topNav}>
-          <img src='/icons/menu-icon.png' width={'55px'}/>
-          <img src='/favicon.png' width={'75px'}/>
-        </nav>
+        
+      <nav className={styles.topNav}>
+                <div>
+                <img onClick={() => setMenu(!menu)} src='/icons/menu-icon.png' width={'55px'}/>
+                { menu ? <MenuPopup/> : null }
+                </div>
+                <a  href='/'>
+                <img src='/favicon.png' width={'75px'}/>
+                </a>
+            </nav>
 
         <nav className={styles.bottomNav}>
           <a href='about'>

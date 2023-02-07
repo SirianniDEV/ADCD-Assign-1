@@ -1,9 +1,11 @@
 import styles from '../styles/Home.module.css'
 import {useState} from 'react'
+import MenuPopup from './comps/menu';
 
 export default function About(){
 
-        const [next, setNext] = useState(1);
+    const [menu, setMenu] = useState(false);
+    const [next, setNext] = useState(1);
 
         const handleLeftArrow=()=>{
         if(next===1){
@@ -54,9 +56,15 @@ export default function About(){
             </header>
 
             <nav className={styles.topNav}>
-                <img src='/icons/menu-icon.png' width={'55px'}/>
+                <div>
+                <img onClick={() => setMenu(!menu)} src='/icons/menu-icon.png' width={'55px'}/>
+                { menu ? <MenuPopup/> : null }
+                </div>
+                <a  href='/'>
                 <img src='/favicon.png' width={'75px'}/>
+                </a>
             </nav>
+
             <nav className={styles.bottomNav}>
 
                 <a href='/'>
@@ -73,10 +81,10 @@ export default function About(){
         
              </nav>
 
-            <div div className={styles.aboutContainer}>
+            <div className={styles.aboutContainer}>
 
 
-                    <div className={styles.aboutTitle}>
+                    <div className={styles.Title}>
                         <hr className={styles.divider}/>
                         <h1 className={styles.header} >About Us</h1>
                         <hr className={styles.divider}/>
@@ -139,7 +147,7 @@ export default function About(){
 
                     <div>
 
-                        <div className={styles.aboutTitle}>
+                        <div className={styles.Title}>
                             <hr className={styles.divider}/>
                             <h1 className={styles.header} >Departments</h1>
                             <hr className={styles.divider}/>
