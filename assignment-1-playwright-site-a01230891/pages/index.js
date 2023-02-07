@@ -21,6 +21,14 @@ export default function Home() {
           <img src='/favicon.png' width={'75px'}/>
         </nav>
 
+        <nav className={styles.bottomNav}>
+          <a href='about'>
+            <span>
+              <img src="/icons/downwardArrow.png" width={'55px'}/>
+            </span>
+          </a>
+        </nav>
+
         <div className={styles.container}>
         <div className={styles.homeContainer}>
           <header>
@@ -34,17 +42,6 @@ export default function Home() {
 
       
       </div>
-
-      <nav className={styles.bottomNav}>
-        <a href='about'>
-          <span>
-            <img src="/icons/downwardArrow.png" width={'55px'}/>
-          </span>
-        </a>
-      </nav>
-
-
-
     </main>
   )
 }

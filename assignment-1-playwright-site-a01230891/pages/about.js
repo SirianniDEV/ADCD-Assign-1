@@ -56,6 +56,21 @@ export default function About(){
             <nav className={styles.topNav}>
                 <img src='/icons/menu-icon.png' width={'55px'}/>
                 <img src='/favicon.png' width={'75px'}/>
+            </nav>
+            <nav className={styles.bottomNav}>
+
+                <a href='/'>
+                    <span>
+                        <img src="/icons/upwardArrow.png" height="50px"/>
+                    </span>
+                </a>
+
+                <a href='contact'>
+                    <span>
+                        <img src="/icons/downwardArrow.png" height="50px"/>
+                    </span>
+                </a>
+        
              </nav>
 
             <div div className={styles.aboutContainer}>
@@ -142,21 +157,6 @@ export default function About(){
 
             </div>
 
-            <nav className={styles.bottomNav}>
-
-            <a href='/'>
-                <span>
-                    <img src="/icons/upwardArrow.png"/>
-                </span>
-            </a>
-
-            <a href='contact'>
-                <span>
-                    <img src="/icons/downwardArrow.png"/>
-                </span>
-            </a>
-       
-            </nav>
         </main>
     )
 }
