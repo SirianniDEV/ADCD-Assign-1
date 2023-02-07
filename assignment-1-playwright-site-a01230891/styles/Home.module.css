@@ -236,7 +236,6 @@
 
 /* Slideshow container */
 .carouselContainer {
-  max-width: 400px;
   position: relative;
   margin: auto;
 }
@@ -271,9 +270,9 @@
 } */
 
 /* Caption text */
-.carouselText {
+.textOnImageHere {
   color: var(--primary-color);
-  background-color: var( --quinary-color);
+  background-color: rgba(16, 46, 53, 0.5);
   font-size: 18px;
   width: 200px;
   text-align: center;

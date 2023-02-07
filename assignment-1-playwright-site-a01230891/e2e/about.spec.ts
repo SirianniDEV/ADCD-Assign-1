@@ -68,7 +68,7 @@ test.describe('Main area', () => {
 })
 
 test.describe('Carousel area', () => {
-    test.skip('Carousel Arrows', async({ page }) => {
+    test('Carousel Arrows', async({ page }) => {
         await page.goto(urlAbout)
 
         await page.screenshot({ path: '/icons/leftArrow.png'})
@@ -77,7 +77,7 @@ test.describe('Carousel area', () => {
         await page.screenshot({ path: '/icons/rightArrow.png'})
     })
 
-    test.skip('Carousel main container area stylizing', async({ page }) => { 
+    test('Carousel main container area stylizing', async({ page }) => { 
         await page.goto(urlAbout)
 
         const carousel = page.locator('#carouselImage');
@@ -125,10 +125,10 @@ test.describe('Carousel area', () => {
         expect(grabbedMargin).toBe("40px 0px");
     })
 
-    test.skip('Carousel center text stylizing', async({ page }) => {
+    test('Carousel center text stylizing', async({ page }) => {
         await page.goto(urlAbout)
 
-        const carousel = page.locator('#testOnImageHere');
+        const carousel = page.locator('#textOnImageHere');
 
         const grabbedBackgroundColor = await carousel.evaluate((ele) => {
             return window.getComputedStyle(ele).getPropertyValue("background-color")
@@ -147,7 +147,7 @@ test.describe('Carousel area', () => {
         expect(grabbedMarginCarousel).toBe("0px 50px");
     })
 
-    test.skip('Should contain an unordered list of information', async ({ page }) => {
+    test('Should contain an unordered list of information', async ({ page }) => {
         await page.goto(urlAbout)
         await expect(page.locator('ul > li')).toContainText(["Applied & Natural Sciences", "Business & Media", "Computing & IT", "Engineerin", "Health Sciences", "Trades & Apprenticeships"]);
     })

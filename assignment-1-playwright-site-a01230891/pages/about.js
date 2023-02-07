@@ -90,27 +90,27 @@ export default function About(){
                     {/* <!-- Full-width images with number and caption text --> */}
                     {next===1&&<div className={styles.carouselImage} >
                         <img src="/carousel-images/0.jpg" width="400px" height="200px"/>
-                        <div className={styles.carouselText}>Achieve Excellence</div>
+                        <div className={styles.textOnImageHere}>Achieve Excellence</div>
                     </div>}
 
                     {next===2&&<div className={styles.carouselImage}>
                         <img src="/carousel-images/1.jpg" width="400px" height="200px" />
-                        <div className={styles.carouselText}>Embrace innovation</div>
+                        <div className={styles.textOnImageHere}>Embrace innovation</div>
                     </div>}
 
                     {next===3&&<div className={styles.carouselImage}>
-                        <img className={styles.carouselImg} src="/carousel-images/2.jpg" width="400px" height="200px"/>
-                        <div className={styles.carouselText}>Champion Diversity</div>
+                        <img src="/carousel-images/2.jpg" width="400px" height="200px"/>
+                        <div className={styles.textOnImageHere}>Champion Diversity</div>
                     </div>}
 
                     {next===4&&<div className={styles.carouselImage}>
-                        <img className={styles.carouselImg} src="/carousel-images/3.jpg" width="400px" height="200px"/>
-                        <div className={styles.carouselText}>Pursue Collaboration</div>
+                        <img src="/carousel-images/3.jpg" width="400px" height="200px"/>
+                        <div className={styles.textOnImageHere}>Pursue Collaboration</div>
                     </div>}
 
                     {next===5&&<div className={styles.carouselImage}>
-                        <img className={styles.carouselImg} src="/carousel-images/4.jpg" width="400px" height="200px"/>
-                        <div className={styles.carouselText}>Engage with Respect</div>
+                        <img src="/carousel-images/4.jpg" width="400px" height="200px"/>
+                        <div className={styles.textOnImageHere}>Engage with Respect</div>
                     </div>}
 
                     <a className={styles.carouselRightArrow} onClick={handleRightArrow}>
