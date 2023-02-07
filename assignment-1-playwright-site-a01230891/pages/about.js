@@ -1,6 +1,48 @@
 import styles from '../styles/Home.module.css'
+import {useState} from 'react'
 
 export default function About(){
+
+        const [next, setNext] = useState(1);
+
+        const handleLeftArrow=()=>{
+        if(next===1){
+            setNext(5);
+        }
+        else{
+        setNext(next-1);
+        }
+        }
+    
+        const handleRightArrow=()=>{
+        if(next===5){
+            setNext(1);
+        }
+        else{
+            setNext(next+1);
+        }
+        }
+    
+        const goToSlide1=()=>{
+        setNext(1);
+        }
+    
+        const goToSlide2=()=>{
+        setNext(2);
+        }
+    
+        const goToSlide3=()=>{
+        setNext(3);
+        }
+
+        const goToSlide4=()=>{
+        setNext(4);
+        }
+
+        const goToSlide5=()=>{
+        setNext(5);
+        }
+
     return (
         <main className={styles.about}>
             <header>
@@ -41,7 +83,44 @@ export default function About(){
                             <p>Tours run weekdays September to May, on our Burnaby campus. See BCIT in person and get a taste of campus life.</p>
                     </div>
 
-                    {/* INSERT CARASOL HERE */}
+
+                    {/* <!-- Slideshow container --> */}
+                    <div className={styles.carouselContainer}>
+
+                    {/* <!-- Full-width images with number and caption text --> */}
+                    {next===1&&<div className={styles.carouselImage} >
+                        <img src="/carousel-images/0.jpg" width="400px" height="200px"/>
+                        <div className={styles.carouselText}>Achieve Excellence</div>
+                    </div>}
+
+                    {next===2&&<div className={styles.carouselImage}>
+                        <img src="/carousel-images/1.jpg" width="400px" height="200px" />
+                        <div className={styles.carouselText}>Embrace innovation</div>
+                    </div>}
+
+                    {next===3&&<div className={styles.carouselImage}>
+                        <img className={styles.carouselImg} src="/carousel-images/2.jpg" width="400px" height="200px"/>
+                        <div className={styles.carouselText}>Champion Diversity</div>
+                    </div>}
+
+                    {next===4&&<div className={styles.carouselImage}>
+                        <img className={styles.carouselImg} src="/carousel-images/3.jpg" width="400px" height="200px"/>
+                        <div className={styles.carouselText}>Pursue Collaboration</div>
+                    </div>}
+
+                    {next===5&&<div className={styles.carouselImage}>
+                        <img className={styles.carouselImg} src="/carousel-images/4.jpg" width="400px" height="200px"/>
+                        <div className={styles.carouselText}>Engage with Respect</div>
+                    </div>}
+
+                    <a className={styles.carouselRightArrow} onClick={handleRightArrow}>
+                        <img className={styles.carouselRightArrow} src="/icons/rightArrow.png"/>
+                    </a>
+                    <a className={styles.carouselLeftArrow}  onClick={handleLeftArrow}>
+                    <img className={styles.carouselLeftArrow} src="/icons/leftArrow.png"/>
+                    </a>
+                    </div>
+
 
                     <div>
 
