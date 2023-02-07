@@ -3,13 +3,12 @@ import MenuPopup from './comps/menu';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  
+
   const [menu, setMenu] = useState(false);
 
   return (
 
     <main className={styles.home}>
-
 
       <header>
         <title>Home</title>
@@ -18,8 +17,6 @@ export default function Home() {
         <meta property='og:description' content='BCIT Digital Design and Development Diploma'/>
         <link rel="icon" href='/favicon.png' />
       </header>
-        
-
         
       <nav className={styles.topNav}>
                 <div>
@@ -46,12 +43,11 @@ export default function Home() {
           </header>
             <hr className={styles.divider}></hr>
             <p>Different than a college or university, the British Columbia Institute of Technology offers practical, flexible, applied education with instructors who have direct, hands-on experience in their field.</p>
-            <a  href="about"><button className={styles.button} >More About Us</button></a>
-            <a  href="contact"><button className={styles.button}>Contact Us</button></a>
+            <a href='/about'> <button className={styles.button} >More About Us</button></a>
+            <a href='/contact'> <button className={styles.button}>Contact Us</button></a>
         </div>
-
-      
       </div>
+
     </main>
   )
 }
